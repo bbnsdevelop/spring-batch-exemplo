@@ -46,6 +46,20 @@ public class User {
 	public void setSalary(Integer salary) {
 		this.salary = salary;
 	}
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("User [id=");
+		builder.append(id);
+		builder.append(", name=");
+		builder.append(name);
+		builder.append(", dept=");
+		builder.append(dept);
+		builder.append(", salary=");
+		builder.append(salary);
+		builder.append("]");
+		return builder.toString();
+	}
 	
 	
 
